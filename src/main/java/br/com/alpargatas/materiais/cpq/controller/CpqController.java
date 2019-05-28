@@ -21,8 +21,8 @@ public class CpqController {
     }
 
     @PostMapping("/{id}")
-    public String createUpdateCpq(@RequestBody Item item, @PathVariable String id){
-        cpqService.createUpdateCpq(item,id);
+    public String createUpdateCpq(@PathVariable String id){
+        cpqService.createUpdateCpq(id);
         return "Ok";
     }
 }
